@@ -14,7 +14,7 @@ The view will need to show the count(s) of user interactions with the business a
 |-----------|---------|--------------------|--------------|-------------------|
 |2025-01-01 | 1       | Mr Kelsey Grammer  | 1            | Modified Password |
 
-In the main.py file, the class `MyClass` will need to be modified to be initialized with a PyMySQL connection. A new method will need to be built inside this class that builds this view inside the Database connection, returning a value/case class/dataclass to show wether this has been successful or not.
+In the main.py file, the class `MyClass` will need to be modified to be initialized with a PyMySQL connection. A new method will need to be built inside this class that builds this view from a DDL definition of your creation inside the Database connection, returning a value/case class/dataclass to show wether this has been successful or not.
 
 A simple PyTest unit test to validate this would be a bonus, to be ran with the command(s):
 
@@ -24,6 +24,9 @@ A simple PyTest unit test to validate this would be a bonus, to be ran with the 
 An example simple unit test under test_example.py is provided with an example pytest fixture for creating a containerized MySQL instance.
 
 If the code used for this could be written in a Service Oriented OOP manner, with seperation of callable modules/responses placed under a /util/ folder, this would be a bonus also.
+## How to Submit
+
+To work on this project, we reccomend you take a working branch from main inside your forked repository and makle changes to that branch. When it is ready to submit, merge your changes into the main branch via pull request. Once a commit has been pushed to the main branch in your forked repository, it will mark it as complete on our side.
 ## Links to useful guides
 
 [Pytest Documentation](https://docs.pytest.org/en/stable/)  
